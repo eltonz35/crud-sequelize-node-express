@@ -1,5 +1,5 @@
 import { DataSource } from "typeorm"
-import { User } from "../entities/user";
+
 
 export const AppDataSource = new DataSource({
     type: "postgres",
@@ -8,7 +8,7 @@ export const AppDataSource = new DataSource({
     username: "elthon",
     password: "elthon123",
     database: "api_softex",
-    entities: [User],
+    entities: ["src/entities/*.ts"],
     synchronize: true,
 });
 

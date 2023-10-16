@@ -9,7 +9,7 @@ const main = async () => {
         await startDatabase();
         console.log("Banco de dados conectado com sucesso!");
 
-        //inicializando exress
+        //inicializando express
         app.listen(3000, () => {
             console.log("Aplicação ouvindo requisições http na porta 3000");
         });
