@@ -16,7 +16,7 @@ export const cadastrarUsuario = async (req: Request, res: Response) => {
         return res.status(201).json({ ok: true});
 
     } catch (error) {
-        console.log(error, 'Errp ao cadastrar usuário');
+        console.log(error, 'Erro ao cadastrar usuário');
         return res
             .status(500)
             .json({ ok: false, message: "Erro ao cadastrar usuário"});
